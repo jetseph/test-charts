@@ -3,7 +3,37 @@ entries:
   observability:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T11:58:21.827392693Z"
+    created: "2023-09-22T12:48:41.046394384Z"
+    dependencies:
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 25.0.0
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.5.0
+    - condition: loki-distributed.enabled
+      name: loki-distributed
+      repository: https://grafana.github.io/helm-charts
+      version: 0.74.5
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 6.15.2
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.59.5
+    description: metrics, logs, vizualization
+    digest: f9b4026422254b9536037a2b783c8bc8465b2ae76e6975fa4eee65d16eb5abe7
+    name: observability
+    urls:
+    - https://jetseph.github.io/test-charts/observability-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-22T12:48:41.034185196Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -33,7 +63,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T11:58:21.814665228Z"
+    created: "2023-09-22T12:48:41.020548203Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -63,7 +93,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T11:58:21.797285753Z"
+    created: "2023-09-22T12:48:41.003560112Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -91,4 +121,4 @@ entries:
     urls:
     - https://jetseph.github.io/test-charts/observability-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-22T11:58:21.778012365Z"
+generated: "2023-09-22T12:48:40.98435705Z"

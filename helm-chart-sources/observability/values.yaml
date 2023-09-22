@@ -13,7 +13,7 @@ promtail:
     logLevel: info
     serverPort: 3101
     clients:
-      - url: http://loki-stack.grafana.svc.cluster.local:3100/loki/api/v1/push
+      - url: http://observability-loki-distributed-gateway.observability.svc.cluster.local:3100/loki/api/v1/push
 
 grafana:
   enabled: true
@@ -23,7 +23,7 @@ grafana:
       datasources:
         - name: Prometheus
           type: prometheus
-          url: http://prometheus-server.prometheus.svc.cluster.local/
+          url: http://observability-prometheus-server.observability.svc.cluster.local/
         - name: Loki
           type: loki
-          url: http://loki-stack.grafana.svc.cluster.local/
+          url: http://observability-loki-distributed-gateway.observability.svc.cluster.local/
