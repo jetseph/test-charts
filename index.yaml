@@ -3,7 +3,37 @@ entries:
   observability:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T11:26:23.269257176Z"
+    created: "2023-09-22T11:58:21.827392693Z"
+    dependencies:
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 25.0.0
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.5.0
+    - condition: loki-distributed.enabled
+      name: loki-distributed
+      repository: https://grafana.github.io/helm-charts
+      version: 0.74.5
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 6.15.2
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.59.5
+    description: metrics, logs, vizualization
+    digest: 82d7bc8970f81aa5e27bdf9a1244d2a266f30c8bc78c7f4ad8220ac6280b8ee0
+    name: observability
+    urls:
+    - https://jetseph.github.io/test-charts/observability-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-22T11:58:21.814665228Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -33,7 +63,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T11:26:23.25052187Z"
+    created: "2023-09-22T11:58:21.797285753Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -61,4 +91,4 @@ entries:
     urls:
     - https://jetseph.github.io/test-charts/observability-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-22T11:26:23.231087712Z"
+generated: "2023-09-22T11:58:21.778012365Z"

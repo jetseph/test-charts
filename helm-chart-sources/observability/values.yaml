@@ -4,7 +4,7 @@ prometheus:
 prometheus-adapter:
   enabled: true
 
-loki:
+loki-distributed:
   enabled: true
 
 promtail:
