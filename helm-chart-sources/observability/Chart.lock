@@ -5,14 +5,14 @@ dependencies:
 - name: prometheus-adapter
   repository: https://prometheus-community.github.io/helm-charts
   version: 4.5.0
-- name: loki-stack
+- name: loki
   repository: https://grafana.github.io/helm-charts
-  version: 2.9.11
+  version: 5.23.0
 - name: promtail
   repository: https://grafana.github.io/helm-charts
   version: 6.15.2
 - name: grafana
   repository: https://grafana.github.io/helm-charts
   version: 6.59.5
-digest: sha256:c74ae4bbf34b1e709325e9274d0fc919cdc5eb7269dcbe55d7c5ee28ba0456d4
-generated: "2023-09-22T09:27:51.821057736Z"
+digest: sha256:efcac9d81aa278f4903e5734ed4479219199389a70fb1114ac990280e9b83ffd
+generated: "2023-09-22T11:21:07.728028573Z"
