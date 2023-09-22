@@ -1,0 +1,29 @@
+prometheus:
+  enabled: true
+
+prometheus-adapter:
+  enabled: true
+
+loki-stack:
+  enabled: true
+
+promtail:
+  enabled: true
+  config:
+    logLevel: info
+    serverPort: 3101
+    clients:
+      - url: http://loki-stack.grafana.svc.cluster.local:3100/loki/api/v1/push
+
+grafana:
+  enabled: true
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          url: http://prometheus-server.prometheus.svc.cluster.local/
+        - name: Loki
+          type: loki
+          url: http://loki-stack.grafana.svc.cluster.local/

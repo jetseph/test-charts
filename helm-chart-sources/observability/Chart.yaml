@@ -1,0 +1,26 @@
+apiVersion: v2
+name: observability
+version: 0.0.1
+appVersion: 0.0.1
+description: metrics, logs, vizualization
+dependencies:
+- name: "prometheus"
+  version: "25.0.0"
+  condition: prometheus.enabled
+  repository: "https://prometheus-community.github.io/helm-charts"
+- name: "prometheus-adapter"
+  version: "4.5.0"
+  condition: prometheus-adapter.enabled
+  repository: "https://prometheus-community.github.io/helm-charts"
+- name: "loki-stack"
+  version: "2.9.11"
+  condition: loki-stack.enabled
+  repository: "https://grafana.github.io/helm-charts"
+- name: "promtail"
+  version: "6.15.2"
+  condition: promtail.enabled
+  repository: "https://grafana.github.io/helm-charts"
+- name: "grafana"
+  version: "6.59.5"
+  condition: grafana.enabled
+  repository:  "https://grafana.github.io/helm-charts"

@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboard-overview
+  labels:
+    grafana_dashboard: "1"
+data:
+  kubernetes.json: |
+{{ .Files.Get "grafana-dashboard-overview.json" | indent 4 }}
