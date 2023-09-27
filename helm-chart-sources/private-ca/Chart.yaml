@@ -1,0 +1,10 @@
+apiVersion: v2
+name: private-ca
+version: 0.0.1
+appVersion: 0.0.1
+description: private ca, trust
+dependencies:
+- name: "trust-manager"
+  version: "0.3.0"
+  condition: trust-manager.enabled
+  repository: "https://charts.jetstack.io"
