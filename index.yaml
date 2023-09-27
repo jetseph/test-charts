@@ -3,7 +3,7 @@ entries:
   ingress:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.5816455Z"
+    created: "2023-09-27T16:39:50.215282476Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -21,7 +21,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.576311546Z"
+    created: "2023-09-27T16:39:50.209436377Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -39,7 +39,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.570784314Z"
+    created: "2023-09-27T16:39:50.204296142Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -62,7 +62,7 @@ entries:
   observability:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.664639107Z"
+    created: "2023-09-27T16:39:50.290267788Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -92,7 +92,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.651255584Z"
+    created: "2023-09-27T16:39:50.277892802Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -122,7 +122,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.637911481Z"
+    created: "2023-09-27T16:39:50.264240732Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -152,7 +152,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.623619199Z"
+    created: "2023-09-27T16:39:50.252123659Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -182,7 +182,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.601613356Z"
+    created: "2023-09-27T16:39:50.233602442Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -213,7 +213,21 @@ entries:
   private-ca:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T16:25:15.665071137Z"
+    created: "2023-09-27T16:39:50.291115543Z"
+    dependencies:
+    - condition: trust-manager.enabled
+      name: trust-manager
+      repository: https://charts.jetstack.io
+      version: 0.3.0
+    description: private ca, trust
+    digest: 5b1abae493cc70d1e623297f7ec036761769221dc0b238a71eec82f608ff196b
+    name: private-ca
+    urls:
+    - https://jetseph.github.io/test-charts/private-ca-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-27T16:39:50.29069681Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -225,4 +239,4 @@ entries:
     urls:
     - https://jetseph.github.io/test-charts/private-ca-0.0.3.tgz
     version: 0.0.3
-generated: "2023-09-27T16:25:15.564979104Z"
+generated: "2023-09-27T16:39:50.198778141Z"
