@@ -3,7 +3,7 @@ entries:
   ingress:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T14:56:33.972884451Z"
+    created: "2023-09-27T16:02:27.841907302Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -21,7 +21,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T14:56:33.967102438Z"
+    created: "2023-09-27T16:02:27.836954053Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -44,7 +44,7 @@ entries:
   observability:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T14:56:34.047822974Z"
+    created: "2023-09-27T16:02:27.915070099Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -74,7 +74,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T14:56:34.035398334Z"
+    created: "2023-09-27T16:02:27.903076105Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -104,7 +104,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T14:56:34.023140607Z"
+    created: "2023-09-27T16:02:27.891049201Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -134,7 +134,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T14:56:34.009710762Z"
+    created: "2023-09-27T16:02:27.878737675Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -164,7 +164,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-27T14:56:33.992631906Z"
+    created: "2023-09-27T16:02:27.861627963Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -192,4 +192,19 @@ entries:
     urls:
     - https://jetseph.github.io/test-charts/observability-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-27T14:56:33.960582899Z"
+  private-ca:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-27T16:02:27.915531168Z"
+    dependencies:
+    - condition: trust-manager.enabled
+      name: trust-manager
+      repository: https://charts.jetstack.io
+      version: 0.3.0
+    description: private ca, trust
+    digest: 1bb253ccfeae7119c73b23d9b0281e55f5d273c9010e86d7f2d7aa19cca262f1
+    name: private-ca
+    urls:
+    - https://jetseph.github.io/test-charts/private-ca-0.0.3.tgz
+    version: 0.0.3
+generated: "2023-09-27T16:02:27.831451522Z"
