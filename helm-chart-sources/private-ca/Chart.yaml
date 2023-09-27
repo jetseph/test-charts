@@ -1,6 +1,6 @@
 apiVersion: v2
 name: private-ca
-version: 0.0.4
+version: 0.0.5
 appVersion: 0.0.1
 description: private ca, trust
 dependencies:
