@@ -3,7 +3,37 @@ entries:
   observability:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T12:48:41.046394384Z"
+    created: "2023-09-27T11:34:35.984637274Z"
+    dependencies:
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 25.0.0
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.5.0
+    - condition: loki-distributed.enabled
+      name: loki-distributed
+      repository: https://grafana.github.io/helm-charts
+      version: 0.74.5
+    - condition: promtail.enabled
+      name: promtail
+      repository: https://grafana.github.io/helm-charts
+      version: 6.15.2
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.59.5
+    description: metrics, logs, vizualization
+    digest: 7b25b49e1cf6c97df6b451ddc1c61d08fbf510c2f92298baec374b3d89415a0e
+    name: observability
+    urls:
+    - https://jetseph.github.io/test-charts/observability-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-09-27T11:34:35.971787817Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -33,7 +63,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T12:48:41.034185196Z"
+    created: "2023-09-27T11:34:35.957929139Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -63,7 +93,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T12:48:41.020548203Z"
+    created: "2023-09-27T11:34:35.942757073Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -93,7 +123,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-09-22T12:48:41.003560112Z"
+    created: "2023-09-27T11:34:35.918101334Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -121,4 +151,4 @@ entries:
     urls:
     - https://jetseph.github.io/test-charts/observability-0.0.1.tgz
     version: 0.0.1
-generated: "2023-09-22T12:48:40.98435705Z"
+generated: "2023-09-27T11:34:35.856406529Z"
