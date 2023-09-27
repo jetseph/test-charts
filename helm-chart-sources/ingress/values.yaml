@@ -5,5 +5,5 @@ cert-manager:
   enabled: true
   installCRDs: true
 
-trust-manager:
-  enabled: true
+# trust-manager:
+#   enabled: true
