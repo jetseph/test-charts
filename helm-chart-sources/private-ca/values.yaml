@@ -1,3 +1,5 @@
 trust-manager:
   enabled: true
-  app.trust.namespace: ingress
+  app:
+    trust:
+      namespace: ingress
