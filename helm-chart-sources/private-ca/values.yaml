@@ -2,4 +2,4 @@ trust-manager:
   enabled: true
   app:
     trust:
-      namespace: ingress
+      namespace: private-ca
