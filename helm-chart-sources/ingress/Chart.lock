@@ -5,8 +5,5 @@ dependencies:
 - name: cert-manager
   repository: https://charts.jetstack.io
   version: v1.13.1
-- name: trust-manager
-  repository: https://charts.jetstack.io
-  version: v0.3.0
-digest: sha256:4b2009e8571a27643726e390401117598d5f9e4fb20ae1686f59fdae46dc4633
-generated: "2023-09-28T12:03:43.672946044Z"
+digest: sha256:2e4d47a7f1166aded0172b21fd2a03ba2e62c27a8b35b0c6d5a7fe02490c3743
+generated: "2023-09-28T13:47:22.64738589Z"

@@ -1,6 +1,6 @@
 apiVersion: v2
 name: ingress
-version: 0.0.4
+version: 0.0.5
 appVersion: 0.0.1
 description: ingress, tls
 dependencies:
@@ -11,8 +11,4 @@ dependencies:
 - name: "cert-manager"
   version: "1.13.1"
   condition: cert-manager.enabled
-  repository: "https://charts.jetstack.io"
-- name: "trust-manager"
-  version: "0.3.0"
-  condition: trust-manager.enabled
   repository: "https://charts.jetstack.io"

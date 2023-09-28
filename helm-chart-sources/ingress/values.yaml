@@ -3,11 +3,5 @@ ingress-nginx:
 
 cert-manager:
   enabled: true
-  # installCRDs: true
+  installCRDs: true
   clusterResourceNamespace: ingress
-
-trust-manager:
-  enabled: true
-  app:
-    trust:
-      namespace: ingress
