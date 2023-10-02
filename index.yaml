@@ -3,7 +3,7 @@ entries:
   ingress:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.925307003Z"
+    created: "2023-10-02T10:09:49.782442045Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -21,7 +21,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.920712006Z"
+    created: "2023-10-02T10:09:49.776608294Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -39,7 +39,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.91519904Z"
+    created: "2023-10-02T10:09:49.771446641Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -57,7 +57,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.910122359Z"
+    created: "2023-10-02T10:09:49.7661694Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -79,7 +79,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.904670699Z"
+    created: "2023-10-02T10:09:49.760540838Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -97,7 +97,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.898762729Z"
+    created: "2023-10-02T10:09:49.755246162Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -115,7 +115,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.893577176Z"
+    created: "2023-10-02T10:09:49.750345993Z"
     dependencies:
     - condition: ingress-nginx.enabled
       name: ingress-nginx
@@ -138,7 +138,7 @@ entries:
   observability:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.003616787Z"
+    created: "2023-10-02T10:09:49.860429135Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -168,7 +168,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.989115672Z"
+    created: "2023-10-02T10:09:49.847350316Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -198,7 +198,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.976605002Z"
+    created: "2023-10-02T10:09:49.833530207Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -228,7 +228,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.963916586Z"
+    created: "2023-10-02T10:09:49.819422938Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -258,7 +258,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:58.946627547Z"
+    created: "2023-10-02T10:09:49.801959721Z"
     dependencies:
     - condition: prometheus.enabled
       name: prometheus
@@ -289,7 +289,7 @@ entries:
   private-ca:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.0065216Z"
+    created: "2023-10-02T10:09:49.863353054Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -303,7 +303,7 @@ entries:
     version: 0.0.9
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.006019836Z"
+    created: "2023-10-02T10:09:49.862777265Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -317,7 +317,7 @@ entries:
     version: 0.0.8
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.005644625Z"
+    created: "2023-10-02T10:09:49.862345849Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -331,7 +331,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.005235471Z"
+    created: "2023-10-02T10:09:49.861965964Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -345,7 +345,7 @@ entries:
     version: 0.0.6
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.004821082Z"
+    created: "2023-10-02T10:09:49.861601514Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -359,7 +359,7 @@ entries:
     version: 0.0.5
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.004419896Z"
+    created: "2023-10-02T10:09:49.861200565Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -373,7 +373,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.004033148Z"
+    created: "2023-10-02T10:09:49.860825168Z"
     dependencies:
     - condition: trust-manager.enabled
       name: trust-manager
@@ -385,14 +385,37 @@ entries:
     urls:
     - https://jetseph.github.io/test-charts/private-ca-0.0.3.tgz
     version: 0.0.3
+  secrets:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2023-10-02T10:09:49.869507178Z"
+    dependencies:
+    - condition: vault.enabled
+      name: vault
+      repository: https://helm.releases.hashicorp.com
+      version: 0.25.0
+    - condition: secrets-store-csi-driver.enabled
+      name: secrets-store-csi-driver
+      repository: https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts
+      version: 1.3.4
+    - condition: external-secrets.enabled
+      name: external-secrets
+      repository: https://charts.external-secrets.io
+      version: 0.9.5
+    description: vault, secrets-store-csi-driver, external-secrets
+    digest: c795d72148e6f6ac5c66609a888dde6c4ee186c483fd0bcde80e5c52d00853e4
+    name: secrets
+    urls:
+    - https://jetseph.github.io/test-charts/secrets-0.0.1.tgz
+    version: 0.0.1
   trust:
   - apiVersion: v2
     appVersion: 0.0.1
-    created: "2023-10-02T09:07:59.00661364Z"
+    created: "2023-10-02T10:09:49.869614328Z"
     description: ca bundle
     digest: 58273ced2dd2fd9e09c0d3ea951b9e61abcc9bc3602f737b1a7b4957e2a4a89e
     name: trust
     urls:
     - https://jetseph.github.io/test-charts/trust-0.0.1.tgz
     version: 0.0.1
-generated: "2023-10-02T09:07:58.887271076Z"
+generated: "2023-10-02T10:09:49.74349221Z"
